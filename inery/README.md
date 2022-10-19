@@ -6,12 +6,12 @@
 - [Inery testnet dashboard](https://testnet.inery.io/dashboard)
 - [Inery testnet explorer](https://explorer.inery.io)
 
-## Auto installation 
+## 1. Auto installation 
 ```
 wget -O inery.sh https://raw.githubusercontent.com/jambulmerah/guide-testnet/main/inery/inery.sh && bash inery.sh
 ```
 
-## Next Step 
+## 2. Next Step 
 Klik enter dan klik nomor 5 
 Lalu langkah selanjutnya adalah ctrl+c
 ```
@@ -23,7 +23,7 @@ cd
 source $HOME/.bash_profile
 ```
 
-## Update peer
+## 3. Update peer
 1. Edit Jumlah Maximal Client
 ```
 cd inery-node/inery.setup/master.node/blockchain/config/
@@ -120,7 +120,7 @@ Masukan Semua Peer Ini Lihat Gambar Taro di Garis Merah, Peer 3 Yang Ada Bawaann
 
 Simpan CTRL X Y ENTER
 
-## Checklog
+## 4. Checklog
 ```
 tail -f $HOME/inery-node/inery.setup/master.node/blockchain/nodine.log
 ```
@@ -135,7 +135,7 @@ tail -f $HOME/inery-node/inery.setup/master.node/blockchain/nodine.log
 
 Setelah block sync, masuk ke tahap dan step berikutnya
 
-## Reg master node as producer block
+## 5. Reg master node as producer block
 After the block is fully synced, continue to register as a block producer
 - Start master node
 command:
@@ -167,7 +167,7 @@ after a few minutes you will see logs like this
 
 ![img](./img/block_produced.jpg)
 
-## Usefull command
+## 6. Usefull command
 1. Checklog
 ```
 tail -f $HOME/inery-node/inery.setup/master.node/blockchain/nodine.log
